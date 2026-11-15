@@ -110,16 +110,16 @@ GRANT ALL PRIVILEGES ON ukom9.*
 TO 'ukom9'@'localhost'
 
 
-CREATE USER 'ukom9-sony'@'localhost'
+CREATE USER 'ukom9-daffa'@'localhost'
 IDENTIFIED BY 'UkomDB@2026';
 
 GRANT SELECT, SHOW VIEW ON ukom9.*
-TO 'ukom9-sony'@'localhost';
+TO 'ukom9-daffa'@'localhost';
 
 FLUSH PRIVILEGES;
 SHOW GRANTS FOR 'ukom9'@'localhost';
 
-SHOW GRANTS FOR 'ukom9-sony'@'localhost';
+SHOW GRANTS FOR 'ukom9-daffa'@'localhost';
 
 SELECT User, Host FROM mysql.user;
 
@@ -171,7 +171,7 @@ VALUES (4, 'Server', 'Ubuntu Server 100.100.9.2');
     Login menggunakan user aplikasi:
 
     mariadb -u ukom9 -p ukom9
-    mariadb -u ukom9-sony -p ukom9
+    mariadb -u ukom9-daffa -p ukom9
 
     Masukkan password:
     UkomDB@2026
